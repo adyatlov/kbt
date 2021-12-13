@@ -10,7 +10,7 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "kbt",
 	Short: "Konvoy bundle tool",
-	Long: "kbt is a CLI tool for analyzing Konvoy diagnostics bundle: " +
+	Long: "kbt is a CLI tool for analyzing Konvoy v1.X diagnostics bundle: " +
 		"https://support.d2iq.com/hc/en-us/articles/4409215513236-Create-a-Konvoy-1-x-Support-Bundle",
 }
 

@@ -52,8 +52,8 @@ func podsToCSV(cmd *cobra.Command, _ []string) {
 func init() {
 	var podsToCsv = &cobra.Command{
 		Use:   "pods",
-		Short: "Represent pods data as a CSV file",
-		Long: "Print pods in the CSV format to the output or file. " +
+		Short: "Represents pods data as a CSV file",
+		Long: "Prints information about pods in the CSV format. " +
 			"If the output file is not specified, writes to the standard output",
 		Run: podsToCSV,
 	}
