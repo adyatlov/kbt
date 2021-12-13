@@ -53,7 +53,7 @@ $ kbt help
 ## How to release
 
 :information_source: Note: if the `goreleaser` command complains about "multiple tokens defined", please
-read [this page](https://goreleaser.com/errors/multiple-tokens/)
+read [this page](https://goreleaser.com/errors/multiple-tokens/).
 
 1. Install [GoReleaser](https://goreleaser.com/install/).
 2. Create [Github personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line)
