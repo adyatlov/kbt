@@ -29,6 +29,9 @@ func PodsToCsv(r io.Reader, w io.Writer) error {
 		"CPU Limit",
 		"Termination Reason",
 		"Restart Count",
+		"Pod IP",
+		"Node Name",
+		"Host IP",
 	})
 	for _, p := range pods.Items {
 		statuses := make(map[string]res.ContainerStatus)
@@ -48,6 +51,9 @@ func PodsToCsv(r io.Reader, w io.Writer) error {
 				c.Resources.Limits.CPU,
 				s.LastState.Terminated.Reason,
 				strconv.Itoa(s.RestartCount),
+				p.Status.PodIP,
+				p.Spec.NodeName,
+				p.Status.HostIP,
 			})
 			if err != nil {
 				return fmt.Errorf("cannot write to CSV: %w", err)
